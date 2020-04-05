@@ -49,7 +49,7 @@ def _sub(x: list, y: list) -> list:
             x[j] += 10
         z = [x[j] - y[j]] + z
     for i in range(ly, lx):
-        j = -1 -i
+        j = -1 - i
         z = [x[j]] + z
     return removezeros(z)
 
@@ -131,7 +131,7 @@ def kura(x: list, y: list):
     return result
 
 
-def testsub(x:int, y:int) -> None:
+def testsub(x: int, y: int) -> None:
     xl = [int(d) for d in str(x)]
     yl = [int(d) for d in str(y)]
     zl = sub(xl, yl)
@@ -139,7 +139,7 @@ def testsub(x:int, y:int) -> None:
     assert z == x - y, "expected %d - %d = %d, got %d" % (x, y, (x - y), z)
 
 
-def testadd(x:int, y:int) -> None:
+def testadd(x: int, y: int) -> None:
     xl = [int(d) for d in str(x)]
     yl = [int(d) for d in str(y)]
     zl = add(xl, yl)
@@ -147,7 +147,7 @@ def testadd(x:int, y:int) -> None:
     assert z == x + y, "expected %d + %d = %d, got %d" % (x, y, (x + y), z)
 
 
-def testmulr(x:int, y:int) -> None:
+def testmulr(x: int, y: int) -> None:
     xl = [int(d) for d in str(x)]
     yl = [int(d) for d in str(y)]
     zl = mulr(xl, yl)
@@ -155,7 +155,7 @@ def testmulr(x:int, y:int) -> None:
     assert z == x * y, "expected %d" % (x * y)
 
 
-def testkura(x:int, y:int) -> None:
+def testkura(x: int, y: int) -> None:
     xl = [int(d) for d in str(x)]
     yl = [int(d) for d in str(y)]
     zl = kura(xl, yl)
@@ -209,3 +209,4 @@ y = 2718281828459045235360287471352662497757247093699959574966967627
 testmulr(x, y)
 testkura(x, y)
 
+print("no assertions. all tests pass!")
